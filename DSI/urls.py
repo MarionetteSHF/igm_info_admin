@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import  variant
+from variant import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('submit/', admin.site.urls),
+    path('submit/', variant.views.variant_page),
 ]
